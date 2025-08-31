@@ -1,0 +1,70 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-image: url("C:\Users\kodad\Desktop\ad-84\smathakrisan\smathakrisan\AD-2-2\smathakrisan\src\Assets\Designer.png");
+  background-size: 100%;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 30px;
+  background-color: white;
+  color: #c9c4c6d5;
+}
+
+.logo {
+  width: 100%;
+  display: none;
+}
+
+.footer {
+  background-color: #63b7a1;
+  color: #0c0c0c;
+  padding: 20px;
+  text-align: center;
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer-section {
+  margin-bottom: 20px;
+}
+
+.footer-links {
+  list-style-type: none;
+  padding: 5px;
+}
+
+.footer-links li {
+  margin-bottom: 5px;
+}
+
+.footer-links li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer-contact-info {
+  list-style-type: none;
+  padding: 0;
+}
+
+.footer-contact-info li {
+  margin: 10;
+}
+
+.navbar-left {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-left .logo {
+  width: 150px;
+}

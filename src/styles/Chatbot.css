@@ -1,0 +1,144 @@
+.chatbot {
+  width: 300px;
+  border: 1px solid#ccc;
+  border-radius: 5px;
+  overflow: hidden;
+  position: fixed;
+  top: 50%;
+  right: 20px;
+  transform: translateY(-50%);
+  background-color: white;
+  z-index: 1000;
+  transition: all 0.3s ease;
+}
+
+.chatbot.minimized {
+  width: 50px;
+  height: 50px;
+  padding: 0;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.chatbot-header {
+  background-color: #007bff;
+  color: white;
+  padding: 10px;
+  font-weight: bold;
+  text-align: center;
+  cursor: move;
+  position: relative;
+}
+
+.chatbot-header .close-button {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 1.2em;
+  cursor: pointer;
+}
+
+.chatbot-messages {
+  height: 200px;
+  overflow-y: auto;
+  padding: 10px;
+}
+
+.message {
+  margin-bottom: 10px;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+.message.bot {
+  background-color: darkcyan;
+  text-align: left;
+}
+
+.message.user {
+  background-color: lightsteelblue;
+  text-align: right;
+}
+
+.chatbot-input {
+  padding: 10px;
+  background-color: darkblue;
+  border-top: 1px solid #ccc;
+  display: flex;
+  align-items: center;
+}
+
+.chatbot-input input {
+  width: 60%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  outline: none;
+}
+
+.chatbot-input button {
+  width: 18%;
+  padding: 8px;
+  margin-left: 4px;
+  border: none;
+  border-radius: 20px;
+  background-color: #007bff;
+  color: #fff;
+  cursor: pointer;
+  outline: none;
+}
+
+.chatbot-input button:hover {
+  background-color: #0056b3;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+  margin-left: 10px;
+}
+
+.dropdown select {
+  appearance: none;
+  padding: 0.5rem;
+  font-size: 0.7rem;
+  border: none;
+  border-radius: 1rem;
+  background-color: #007bff;
+  color: #fff;
+  cursor: pointer;
+  outline: none;
+  width: 110px;
+}
+
+.dropdown select:focus {
+  box-shadow: 0 0 0 2px white;
+}
+
+.dropdown::after {
+  content: "\25BC";
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  pointer-events: none;
+  color: #fff;
+}
+
+.chatbot-icon {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #007bff;
+  color: white;
+  border-radius: 50%;
+  cursor: pointer;
+}

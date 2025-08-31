@@ -1,0 +1,23 @@
+
+
+.product-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-gap: 20px;
+  }
+  
+  .product-item {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+  }
+  
+  .product-item h2 {
+    margin-top: 0;
+  }
+  
+  .product-item p {
+    margin: 10px 0;
+  }
+  
+  
